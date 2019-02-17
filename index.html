@@ -8,7 +8,8 @@
 		.container {
 			display: flex;
 			justify-content: flex-end;
-			border: 1px sold black;
+			border: 1px solid red;
+
 		}
 		.item {
 			border: 1px solid black;
@@ -18,44 +19,50 @@
 			margin-right: auto;
 		}
 		.img {
-			height: 80vh;
-			width: 80vw;
+			/*height: ;*/
+			width: 100%;
 			flex:1;
 			/*margin-left: auto;*/
 		}
+
+		.content {
+			display: -webkit-flex;
+			display: flex;
+			justify-content: space-between;
+		}
 		.right-content {
 			flex: 1;
-		}
-		.content {
-			display: flex;
-			width: 100vw;
-			justify-content: space-between;
-			/*flex: 1;*/
 			flex-wrap: wrap;
 		}
 		.top-right {
 			display: flex;
-			border: 1px solid black;
 			flex-direction: column;
-
-		}
-		h1 {
+			justify-content: center;
+			align-items: center;
+			/*border: 1px solid black;*/
 			
 		}
-		.buttton {
-			padding: 10px;
+		a {
+			padding: 20px;
 			text-align: center;
 			border: 1px solid black;
-			background-color: blue;
+			border-radius: 15px;
+			background-color: red;
 			color: white; 
-			width:450px;
-			height: 20px;
+			text-decoration: none;
+			width: 7em;
+			height: .5em;
+			margin: 20px;
 
+
+		}
+		a: hover {
+			background-color: #555;
 		}
 		.lower-right {
 			display: flex;
 			flex-direction: column;
-			border: 1px solid black;
+			/*border: 1px solid black;*/
 		}
 		.icons {
 			display: flex;
@@ -73,30 +80,30 @@
 		<div class="item item-5">Log in</div>
 	</div>
 	<div class="content">
-		<div>
 			<img class="img" src="profile-img.jpg">
 			<div class="item right-content">
 				<div class="top-right">
 					<h1>Amy Gregory</h1>
 		            <h2>Spanish Teacher, Health Coach, and Coding Ninja</h3>
-		            <a class="button"target="_blank" href="https://wellnessfromscratch.me/">
-		                <div>My Blog</div>
+		            <a target="_blank" href="https://wellnessfromscratch.me/">
+		            My Blog
 		            </a>
 	        	</div>
-	        <div class="lower-right">
-            <p>Hello! Having been a Spanish teacher for more than twenty years, I seek to bring to life truly interactive online learning activities for language learners.</p>
-            <p>My academic training has provided me with a thorough knowledge of English grammar and writing conventions; thus, I am also qualified to create and proof user-side content.</p>
-            <p>In addition, my other ever-present passion is living a healthy lifestyle. I believe that food is medicine and that eating highly processed food-like substances is killing us.</p>
-            <p>WORK<br>
-                High Tech Spanish teacher at...<br> UT-Austin<br> CSU-Fresno<br> UT-Knoxville<br> Pilgrim School (Los Angeles)<br>Bilingual 5th grade teacher at Elgin Elementary
-            </p>
-            <p>
-            EDUCATION<br>
-                Inventive.io<br>
-                University of Texas, Austin (Ph.D.)<br>
-                Carleton College (B.A.)
-             </p>
-             </div>
+	        
+	        	<div class="lower-right">
+		            <p>Hello! Having been a Spanish teacher for more than twenty years, I seek to bring to life truly interactive online learning activities for language learners.</p>
+		            <p>My academic training has provided me with a thorough knowledge of English grammar and writing conventions; thus, I am also qualified to create and proof user-side content.</p>
+		            <p>In addition, my other ever-present passion is living a healthy lifestyle. I believe that food is medicine and that eating highly processed food-like substances is killing us.</p>
+		            <p>WORK<br>
+		                High Tech Spanish teacher at...<br> UT-Austin<br> CSU-Fresno<br> UT-Knoxville<br> Pilgrim School (Los Angeles)<br>Bilingual 5th grade teacher at Elgin Elementary
+		            </p>
+		            <p>
+		            EDUCATION<br>
+		                Inventive.io<br>
+		                University of Texas, Austin (Ph.D.)<br>
+		                Carleton College (B.A.)
+		             </p>
+             	</div>
              <div class="icons">
 	             <div width="20%">
 	                        <a href="https://www.facebook.com/amy.e.gregory613"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
@@ -114,7 +121,6 @@
 	                        <a href="https://stackoverflow.com/users/10985856/aegreg"><i class="fa fa-stack-overflow fa-3x" aria-hidden="true"></i></a>
 	             </div>
              </div>
-
 	</div>
 </body>
 </html>
