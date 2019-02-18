@@ -5,30 +5,35 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 	<style type="text/css">
-		.container {
+		body {
+  			display: flex;
+  			flex-direction: column;
+  			height: 100vh;
+  			width: 100vw;
+		}
+		.header {
 			display: flex;
 			justify-content: flex-end;
-			border: 1px solid red;
-
+			flex-shrink: 1;
+			margin: 1em;
 		}
 		.item {
-			border: 1px solid black;
+			/*border: 1px solid black;*/
 			padding: 20px;
 		}	
 		.item-1 {
 			margin-right: auto;
-		}
-		.img {
-			/*height: ;*/
-			width: 100%;
-			flex:1;
-			/*margin-left: auto;*/
 		}
 
 		.content {
 			display: -webkit-flex;
 			display: flex;
 			justify-content: space-between;
+		}
+		.img {
+			width: 150%;
+			flex:1;
+			margin-left: auto;
 		}
 		.right-content {
 			flex: 1;
@@ -37,42 +42,77 @@
 		.top-right {
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
-			align-items: center;
+			font-weight: 400;
+			/*justify-content: center;*/
+			/*align-items: center;*/
 			/*border: 1px solid black;*/
-			
 		}
-		a {
-			padding: 20px;
+		.top-right p {
+			font-size: 12px;
+			font-weight: 500;
+			margin: 0px;
+		}
+		a.button {
+			padding: 1em 1.5em;
 			text-align: center;
 			border: 1px solid black;
-			border-radius: 15px;
+			border-radius: 10px;
 			background-color: red;
 			color: white; 
 			text-decoration: none;
-			width: 7em;
+			width: 90%;
 			height: .5em;
-			margin: 20px;
-
+			margin: .5em;
 
 		}
-		a: hover {
-			background-color: #555;
+		a.button: hover {
+			background-color: CD5C5C;
 		}
 		.lower-right {
 			display: flex;
 			flex-direction: column;
 			/*border: 1px solid black;*/
 		}
+		p {
+			font-size: 10px;
+		}
 		.icons {
 			display: flex;
 			justify-content: space-around;
 		}
+		a.icon {
+			color: red;
+		}
+		footer {
+			position: fixed;
+   			left: 0;
+   			bottom: 0;
+   			width: 100%;
+			/*border: 1px solid black;*/
+			display: flex;
+			justify-content: flex-start;
+			margin: .5em;
+		}
+		footer p {
+			margin: 30px 10px 0px 10px;
+		}
+		a#footer.button {
+			padding: 1em 1.5em;
+			text-align: center;
+			/*border: 1px solid black;*/
+			border-radius: 10px;
+			background-color: red;
+			color: white; 
+			font-size:10px;
+			text-decoration: none;
+			width: 8em;
+			height: 5px;
+			margin: 20px 10px 0px 10px;
 
 	</style>
 </head>
 <body>
-	<div class="container">
+	<div class="header">
 		<div class="item item-1">Logo</div>
 		<div class="item item-2">Getting started for free</div>
 		<div class="item item-3">Features</div>
@@ -80,13 +120,13 @@
 		<div class="item item-5">Log in</div>
 	</div>
 	<div class="content">
-			<img class="img" src="profile-img.jpg">
-			<div class="item right-content">
+		<img class="img" src="profile-img.jpg">
+		<div class="item right-content">
 				<div class="top-right">
-					<h1>Amy Gregory</h1>
-		            <h2>Spanish Teacher, Health Coach, and Coding Ninja</h3>
-		            <a target="_blank" href="https://wellnessfromscratch.me/">
-		            My Blog
+					<p>Amy Gregory</p>
+		            <p>Spanish Teacher, Health Coach, and Coding Ninja</p>
+		            <a class="button" target="_blank" href="https://wellnessfromscratch.me/">
+		            Read My Blog
 		            </a>
 	        	</div>
 	        
@@ -106,21 +146,25 @@
              	</div>
              <div class="icons">
 	             <div width="20%">
-	                        <a href="https://www.facebook.com/amy.e.gregory613"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+	                        <a class="icon" href="https://www.facebook.com/amy.e.gregory613"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
 	             </div>
 	             <div width="20%">
-	                        <a href="linkedin.com/in/aegregory"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+	                        <a class="icon"href="linkedin.com/in/aegregory"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
 	             </div>
 	             <div width="20%">
-	                        <a href="https://twitter.com/aegreg613"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i> </a>
+	                        <a class="icon"href="https://twitter.com/aegreg613"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i> </a>
 	             </div>
 	             <div width="20%">
-	                        <a href="https://github.com/AmyGregory613"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+	                        <a class="icon"href="https://github.com/AmyGregory613"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
 	             </div>
 	             <div width="20%">
-	                        <a href="https://stackoverflow.com/users/10985856/aegreg"><i class="fa fa-stack-overflow fa-3x" aria-hidden="true"></i></a>
+	                        <a class="icon"href="https://stackoverflow.com/users/10985856/aegreg"><i class="fa fa-stack-overflow fa-2x" aria-hidden="true"></i></a>
 	             </div>
              </div>
 	</div>
+	<footer>
+		<p>Get a page and domain with your name.</p>
+		<a id="footer" class="button" target="_blank" href="https://wellnessfromscratch.me/">Get started for free.</a>
+	</footer>
 </body>
 </html>
